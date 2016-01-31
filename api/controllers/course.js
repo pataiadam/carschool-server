@@ -31,7 +31,7 @@ module.exports = {
     },
 
     destroy: function (req, res) {
-        db('courses').remove({id: req.body.id});
+        db('courses').remove({id: req.query.id});
 
         res.json({isSuccess: true});
     }
