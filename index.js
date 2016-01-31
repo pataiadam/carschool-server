@@ -13,6 +13,10 @@ app.use(function(req, res, next) {
 
 var courseController = require('./api/controllers/course');
 //Course controller
+app.get('/ping', function (req, res) {
+    res.send('pong');
+});
+
 app.post('/course/list', courseController.list);
 app.post('/course/create', courseController.create);
 app.post('/course/update', courseController.update);
