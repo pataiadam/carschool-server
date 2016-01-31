@@ -22,6 +22,9 @@ app.post('/course/create', courseController.create);
 app.post('/course/update', courseController.update);
 app.post('/course/destroy', courseController.destroy);
 
+app.use(function(err, req, res, next) {
+    return res.status(500).send('Ooops');
+});
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
