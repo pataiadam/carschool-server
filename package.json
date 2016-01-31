@@ -1,0 +1,18 @@
+{
+  "name": "autosuli-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Patai <pataiadam@gmail.com> (https://github.com/pataiadam)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "lowdb": "^0.12.2",
+    "only": "0.0.2",
+    "uuid": "^2.0.1"
+  }
+}
