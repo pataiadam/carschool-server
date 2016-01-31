@@ -20,7 +20,7 @@ app.get('/ping', function (req, res) {
 app.post('/course/list', courseController.list);
 app.post('/course/create', courseController.create);
 app.post('/course/update', courseController.update);
-app.post('/course/destroy', courseController.destroy);
+app.get('/course/destroy', courseController.destroy);
 
 app.use(function(err, req, res, next) {
     return res.status(500).send('Ooops');
